@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163B5C">
+  <meta name="description" content="Discover Gastropedia Speciality Clinics for general medicine, pediatrics, adult and pediatric gastroenterology, advanced endoscopy, diagnostic laboratory, and pharmacy services under one roof.">
+  <meta property="og:title" content="Gastropedia Speciality Clinics | Advanced Medical &amp; Gastroenterology Care">
+  <meta property="og:description" content="Discover Gastropedia Speciality Clinics for general medicine, pediatrics, adult and pediatric gastroenterology, advanced endoscopy, diagnostic laboratory, and pharmacy services under one roof.">
+  <meta property="og:type" content="website">
+  <title>Gastropedia Speciality Clinics | Advanced Medical &amp; Gastroenterology Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--teal:#087F8C;--navy:#163B5C;--white:#FFFFFF;--aqua:#F1FAFA;--mint:#B8E5D5;--slate:#293746}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;width:100%;overflow-x:hidden;font-family:"DM Sans",sans-serif;color:var(--slate)}
+    h1,h2,h3,h4{font-family:"Plus Jakarta Sans",sans-serif;letter-spacing:-.035em}
+    h1{font-size:clamp(2.55rem,5vw,4.7rem)!important;line-height:1.1}
+    h2{font-size:clamp(2rem,3.3vw,3.1rem)!important;line-height:1.17}
+    h3{font-size:1.2rem!important;line-height:1.35}
+    p{line-height:1.75}
+    a,button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+    .shell{width:min(100% - 40px,1240px);margin-inline:auto}
+    .section-pad{padding-block:clamp(72px,8vw,112px)}
+    .section-kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:var(--teal)}
+    .lead{font-size:1.1rem;color:#465a66}
+    .primary-btn,.secondary-btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+    .primary-btn:hover,.secondary-btn:hover{transform:translateY(-2px)}
+    .primary-btn{background:var(--teal);color:white;box-shadow:0 9px 22px #087f8c27}
+    .primary-btn:hover{background:#066a75;box-shadow:0 12px 28px #087f8c38}
+    .secondary-btn{border:1.5px solid var(--navy);color:var(--navy);background:white}
+    .secondary-btn:hover{background:var(--aqua)}
+    .site-header{position:sticky;top:0;z-index:40;background:#fffffff2;backdrop-filter:blur(16px);border-bottom:1px solid #dceaea}
+    .header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy);flex-shrink:0}
+    .brand-mark{width:45px;height:45px;display:grid;place-items:center;border-radius:14px;background:var(--teal);color:white}
+    .brand-mark svg{width:30px;height:30px}
+    .brand-name{display:block;font:800 1rem/1.1 "Plus Jakarta Sans",sans-serif;letter-spacing:.07em}
+    .brand-small{display:block;font-size:.58rem;letter-spacing:.25em;font-weight:700;margin-top:5px}
+    .desktop-nav{display:flex;align-items:center;gap:clamp(12px,1.8vw,27px)}
+    .desktop-nav a:not(.primary-btn),.mobile-nav a:not(.primary-btn){color:var(--navy);text-decoration:none;font-size:.88rem;font-weight:700}
+    .desktop-nav a:hover,.mobile-nav a:hover{color:var(--teal)}
+    .menu-toggle{display:none;background:white;border:1px solid #cce0e2;border-radius:12px;width:44px;height:44px;color:var(--navy);font-size:1.4rem}
+    .mobile-nav{display:none;padding:12px 20px 22px;border-top:1px solid #e1eeee}
+    .mobile-nav.is-open{display:flex;flex-direction:column;gap:18px}
+    .hero{background:linear-gradient(125deg,#F1FAFA 5%,#fff 63%,#e9f7f4);position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:#b8e5d554;right:-130px;top:-130px;pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(34px,5vw,80px);min-height:650px;padding-block:60px 82px}
+    .hero-copy{position:relative;z-index:1}
+    .hero-copy h1{margin:18px 0 21px;color:var(--navy);max-width:730px}
+    .hero-copy .welcome{font-family:"Plus Jakarta Sans",sans-serif;font-size:1.18rem;font-weight:700;color:var(--teal);line-height:1.4}
+    .hero-copy .description{max-width:620px;color:#435663;margin:14px 0 26px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .trust-row{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:35px}
+    .trust-item{display:flex;align-items:center;gap:8px;font-size:.83rem;font-weight:700;color:var(--navy)}
+    .trust-item:before{content:"✓";display:grid;place-items:center;width:22px;height:22px;flex:none;border-radius:50%;background:var(--mint);color:var(--navy)}
+    .hero-art{position:relative;padding:20px 22px}
+    .hero-art:before{content:"";position:absolute;inset:5% 0 0 8%;background:var(--mint);border-radius:42% 42% 26px 26px;transform:rotate(-5deg)}
+    .image-frame{position:relative;overflow:hidden;border-radius:28px;background:#dfefee}
+    .hero-art .image-frame{height:510px;border-radius:46% 46% 26px 26px;box-shadow:0 24px 60px #163b5c22}
+    .image-frame img{width:100%;height:100%;object-fit:cover;display:block}
+    .image-fallback{display:none;position:absolute;inset:0;padding:28px;align-items:center;justify-content:center;text-align:center;color:var(--navy);font-weight:700;background:#e6f4f1}
+    .image-frame.image-error .image-fallback{display:flex}
+    .image-frame.image-error img{display:none}
+    .float-card{position:absolute;z-index:2;padding:12px 16px;background:white;border:1px solid #e2eeee;border-radius:15px;box-shadow:0 12px 30px #163b5c19;color:var(--navy);font-size:.79rem;font-weight:700}
+    .float-one{left:-12px;top:19%}.float-two{right:-18px;top:53%}.float-three{left:2px;bottom:7%}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,92px);align-items:center}
+    .about-photo{height:510px;box-shadow:0 20px 48px #163b5c14}
+    .about-copy h2,.section-heading h2{color:var(--navy);margin:12px 0 14px}
+    .about-copy .subheading{color:var(--teal);font-size:1.14rem;font-weight:700}
+    .about-copy p{white-space:pre-line;color:#455a67}
+    .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:46px}
+    .value-card,.service-card,.doctor-card,.facility-card,.contact-card,.form-panel{background:white;border:1px solid #e3eeee;border-radius:20px;box-shadow:0 10px 28px #163b5c0a}
+    .value-card{padding:25px}
+    .value-icon,.service-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#e2f4ef;color:var(--teal);font-size:1.35rem;font-weight:700;margin-bottom:16px}
+    .value-card h3,.service-card h3,.doctor-card h3,.facility-card h3{color:var(--navy);margin:0 0 10px}
+    .value-card p,.service-card p,.doctor-card p,.facility-card p{margin:0;color:#536471;font-size:.94rem}
+    .section-heading{max-width:760px;margin-bottom:38px}
+    .services{background:var(--aqua)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .service-card{display:flex;flex-direction:column;align-items:flex-start;padding:30px;transition:transform .25s,box-shadow .25s}
+    .service-card:hover{transform:translateY(-5px);box-shadow:0 19px 38px #163b5c18}
+    .service-card p{flex:1;margin-bottom:25px}
+    .service-link{font-weight:700;color:var(--teal);text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+    .service-link:after{content:"→";font-size:1.15rem;transition:transform .2s}
+    .service-link:hover:after{transform:translateX(4px)}
+    .services-note{margin-top:23px;color:#536471;font-size:.9rem}
+    .subsection-heading{color:var(--navy);margin:40px 0 20px}
+    .doctor-grid,.facility-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .doctor-card{padding:23px;display:flex;flex-direction:column}
+    .doctor-avatar{display:grid;place-items:center;width:70px;height:70px;background:#e7f5f3;color:var(--teal);border-radius:18px;margin-bottom:18px}
+    .doctor-card p{flex:1;margin-bottom:20px}
+    .doctor-card .secondary-btn{font-size:.85rem}
+    .facility-card{overflow:hidden}
+    .facility-card .image-frame{height:178px;border-radius:0}
+    .facility-body{padding:20px}
+    .facility-body p{font-size:.86rem}
+    .highlight-strip{margin-top:38px;padding:24px;text-align:center;background:var(--navy);color:white;border-radius:20px;font-family:"Plus Jakarta Sans",sans-serif;font-weight:700}
+    .contact-section{background:var(--aqua)}
+    .contact-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:30px;align-items:start}
+    .contact-stack{display:grid;gap:10px}
+    .contact-card{padding:17px 20px;font-weight:600;color:var(--navy)}
+    .placeholder-note{font-size:.82rem;color:#526672;margin:9px 0 0}
+    .map-box{padding:28px;border:1px dashed #87b9ba;border-radius:18px;background:#e8f5f3;color:var(--navy);margin-top:18px;line-height:1.6}
+    .form-panel{padding:clamp(22px,4vw,38px)}
+    .form-panel h3{color:var(--navy);margin:0 0 9px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:22px}
+    .field{min-width:0}.field.wide{grid-column:1/-1}
+    .field label,.consent-label{display:block;font-weight:700;color:var(--navy);font-size:.87rem;margin-bottom:7px}
+    .field input,.field select,.field textarea{display:block;width:100%;min-height:46px;border:1px solid #b9ced2;border-radius:10px;background:white;color:var(--slate);padding:10px 13px}
+    .field textarea{min-height:95px;resize:vertical}
+    .field [aria-invalid="true"]{border-color:#aa3441}
+    .field-error{min-height:0;color:#9b2332;font-size:.8rem;margin:5px 0 0}
+    .consent-wrap{display:flex;align-items:flex-start;gap:10px;margin-top:20px}
+    .consent-wrap input{width:18px;height:18px;flex:none;margin-top:3px;accent-color:var(--teal)}
+    .consent-label{margin:0;line-height:1.5}
+    .form-note{font-size:.85rem;color:#536471;margin:18px 0}
+    .form-status{margin-top:16px;padding:14px 16px;border-radius:10px;background:#fff1eb;color:#713b21;font-weight:600;line-height:1.5}
+    .configuration-note{margin-top:18px;padding:16px 18px;border-left:4px solid var(--teal);background:white;border-radius:0 12px 12px 0;color:#435663;font-size:.87rem;line-height:1.6}
+    .site-footer{background:var(--navy);color:#dcebf0;padding:64px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.35fr;gap:32px}
+    .site-footer h3{color:white;font-size:1rem!important;margin:0 0 16px}
+    .site-footer a{display:block;color:#dcebf0;text-decoration:none;margin-bottom:11px;font-size:.9rem}
+    .site-footer a:hover{text-decoration:underline;color:white}
+    .site-footer .brand{color:white;margin-bottom:15px}
+    .site-footer p{font-size:.88rem;line-height:1.7}
+    .footer-placeholder{display:block;margin:0 0 10px;font-size:.86rem}
+    .footer-bottom{border-top:1px solid #ffffff30;margin-top:38px;padding-top:22px}
+    .footer-bottom p{max-width:920px}
+    .footer-meta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+    .back-top{display:inline-flex!important;padding:7px 11px;border:1px solid #ffffff66;border-radius:9px;margin:0!important}
+    .legal-links{display:flex;gap:18px;flex-wrap:wrap;margin:17px 0}
+    .legal-links span{font-size:.84rem;color:#dcebf0}
+    .inactive{opacity:.8}
+    @media(max-width:1060px){.desktop-nav{display:none}.menu-toggle{display:block}.values-grid,.doctor-grid,.facility-grid{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:720px){.shell{width:min(100% - 32px,1240px)}.hero-grid,.split,.contact-grid{grid-template-columns:1fr}.hero-grid{padding-block:52px 64px;min-height:0}.hero-art{max-width:550px;width:100%;margin:auto}.hero-art .image-frame{height:400px}.float-one{left:0}.float-two{right:0}.about-photo{height:360px}.values-grid,.services-grid,.doctor-grid,.facility-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.section-pad{padding-block:70px}}
+    @media(max-width:480px){.brand-mark{width:39px;height:39px}.brand-name{font-size:.83rem}.brand-small{font-size:.49rem}.hero-art .image-frame{height:340px}.float-card{font-size:.68rem;padding:9px 10px}.footer-grid{grid-template-columns:1fr}.hero-actions a{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full" style="background: rgb(255, 255, 255);">
+  <header data-template-id="site-header" class="canva-header site-header" style="background: rgb(255, 255, 255);">
+   <div class="shell header-inner"><a href="#home" class="brand" aria-label="Gastropedia Speciality Clinics — Home"> <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4v12M12 10h12"></path><path d="M18 19c-1 2-5 1-6 5-1 4 2 7 6 7 5 0 8-3 8-8 0-4-3-6-5-7v5c0 2-2 3-3 2"></path>
+      </svg></span> <span><span class="brand-name">GASTROPEDIA</span><span class="brand-small">SPECIALITY CLINICS</span></span> </a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a data-template-id="nav-home" class="canva-link" href="#home" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Home</a> <a data-template-id="nav-about" class="canva-link" href="#about" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">About Us</a> <a data-template-id="nav-services" class="canva-link" href="#services" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Specialities &amp; Services</a> <a data-template-id="nav-doctors" class="canva-link" href="#doctors" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Doctors &amp; Facilities</a> <a data-template-id="nav-contact" class="canva-link" href="#contact" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Contact</a> <a data-template-id="header-appointment" class="canva-button primary-btn" href="#contact" style="background: rgb(8, 127, 140); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Book an Appointment</a>
+    </nav><button id="menu-toggle" class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation menu"><span aria-hidden="true">☰</span></button>
+   </div>
+   <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden=""><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Specialities &amp; Services</a><a href="#doctors">Doctors &amp; Facilities</a><a href="#contact">Contact</a> <a href="#contact" class="primary-btn">Book an Appointment</a>
+   </nav>
+  </header>
+  <main>
+   <section id="home" data-template-id="hero-section" class="canva-section hero" style="background: linear-gradient(125deg, rgb(241, 250, 250), rgb(255, 255, 255));">
+    <div class="shell hero-grid">
+     <div class="hero-copy"><span data-template-id="hero-eyebrow" class="canva-text section-kicker" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">ADVANCED HEALTHCARE • COMPASSIONATE CARE</span>
+      <h1 data-template-id="hero-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 800; font-style: normal; font-size: 32px;">Advanced Medical Care. A Healthier Tomorrow.</h1>
+      <p data-template-id="hero-welcome" class="canva-text welcome" style="color: rgb(8, 127, 140); font-weight: 700; font-style: normal; font-size: 16px;">Welcome to Gastropedia Speciality Clinics</p>
+      <p data-template-id="hero-description" class="canva-text description" style="color: rgb(67, 86, 99); font-weight: 400; font-style: normal; font-size: 16px;">Your trusted destination for comprehensive healthcare, with specialised expertise in adult and pediatric gastroenterology, general medicine, and child healthcare. Experience advanced diagnostics, modern medical facilities, and compassionate care—all under one roof.</p>
+      <div class="hero-actions"><a data-template-id="hero-primary" class="canva-button primary-btn" href="#contact" style="background: rgb(8, 127, 140); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Book an Appointment</a> <a data-template-id="hero-secondary" class="canva-button secondary-btn" href="#services" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Explore Our Specialities</a>
+      </div>
+      <div class="trust-row"><span data-template-id="trust-one" class="canva-text trust-item" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Comprehensive Healthcare</span> <span data-template-id="trust-two" class="canva-text trust-item" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Advanced Diagnostic Facilities</span> <span data-template-id="trust-three" class="canva-text trust-item" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Adult &amp; Pediatric Specialities</span>
+      </div>
+     </div>
+     <div class="hero-art">
+      <div class="image-frame"><img data-template-id="hero-image" class="canva-image" loading="eager" src="https://images.pexels.com/photos/6749765/pexels-photo-6749765.jpeg" alt="Smiling female doctor with a stethoscope in a bright clinical environment"> <span class="image-fallback" aria-hidden="true">Friendly doctor in a bright clinical setting</span>
+      </div><span data-template-id="hero-float-one" class="canva-card float-card float-one" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">✚  Expert Medical Care</span> <span data-template-id="hero-float-two" class="canva-card float-card float-two" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">◇  Advanced Endoscopy Unit</span> <span data-template-id="hero-float-three" class="canva-card float-card float-three" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">♡  Patient-Centred Approach</span>
+     </div>
+    </div>
+   </section>
+   <section id="about" class="section-pad">
+    <div class="shell">
+     <div class="split">
+      <div class="image-frame about-photo"><img data-template-id="about-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/39192382/pexels-photo-39192382.jpeg" alt="Doctor and patient in consultation in a modern clinic office"> <span class="image-fallback" aria-hidden="true">Doctor speaking with a patient</span>
+      </div>
+      <div class="about-copy"><span data-template-id="about-kicker" class="canva-text section-kicker" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">ABOUT US</span>
+       <h2 data-template-id="about-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 800; font-style: normal; font-size: 24px;">Healthcare That Puts You First</h2>
+       <p data-template-id="about-subheading" class="canva-text subheading" style="color: rgb(8, 127, 140); font-weight: 700; font-style: normal; font-size: 16px;">Advanced facilities. Personal attention. Comprehensive care.</p>
+       <p data-template-id="about-body" class="canva-text" style="color: rgb(69, 90, 103); font-weight: 400; font-style: normal; font-size: 16px;">Gastropedia Speciality Clinics is designed to bring essential medical expertise and advanced diagnostic facilities together in one convenient location. With an initial focus on general medicine, general pediatrics, adult gastroenterology, and pediatric gastroenterology, we aim to provide accessible, coordinated, and compassionate healthcare for individuals and families.
+
+Our integrated approach brings consultations, diagnostic investigations, endoscopic procedures, and pharmacy services together within the same premises, helping patients access the care they need with greater convenience.</p>
+      </div>
+     </div>
+     <div class="values-grid">
+      <article class="value-card">
+       <span class="value-icon" aria-hidden="true">♡</span>
+       <h3 data-template-id="value-one-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Patient-First Care</h3>
+       <p data-template-id="value-one-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Personalised attention with respect, empathy, and clear communication.</p>
+      </article>
+      <article class="value-card">
+       <span class="value-icon" aria-hidden="true">✚</span>
+       <h3 data-template-id="value-two-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Specialised Expertise</h3>
+       <p data-template-id="value-two-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Dedicated medical services for adults and children.</p>
+      </article>
+      <article class="value-card">
+       <span class="value-icon" aria-hidden="true">◇</span>
+       <h3 data-template-id="value-three-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Modern Facilities</h3>
+       <p data-template-id="value-three-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Contemporary diagnostic and procedural facilities designed to support quality care.</p>
+      </article>
+      <article class="value-card">
+       <span class="value-icon" aria-hidden="true">⌂</span>
+       <h3 data-template-id="value-four-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Convenient Healthcare</h3>
+       <p data-template-id="value-four-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Consultation, laboratory, endoscopy, and pharmacy services at one location.</p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="services" data-template-id="services-section" class="canva-section section-pad services" style="background: rgb(241, 250, 250);">
+    <div class="shell">
+     <div class="section-heading"><span data-template-id="services-kicker" class="canva-text section-kicker" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">SPECIALITIES &amp; SERVICES</span>
+      <h2 data-template-id="services-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 800; font-style: normal; font-size: 24px;">Comprehensive Care Across Specialities</h2>
+      <p data-template-id="services-intro" class="canva-text lead" style="color: rgb(70, 90, 102); font-weight: 400; font-style: normal; font-size: 16px;">Explore our medical services, designed to address the healthcare needs of adults and children.</p>
+     </div>
+     <div class="services-grid">
+      <article class="service-card">
+       <span class="service-icon" aria-hidden="true">✚</span>
+       <h3 data-template-id="service-one-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">General Medicine</h3>
+       <p data-template-id="service-one-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Medical consultations and evaluation for common illnesses, general health concerns, and ongoing health management.</p><a data-template-id="service-one-cta" class="canva-link service-link specialty-cta" data-specialty="General Medicine" href="#contact" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">Book Consultation</a>
+      </article>
+      <article class="service-card">
+       <span class="service-icon" aria-hidden="true">♡</span>
+       <h3 data-template-id="service-two-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">General Pediatrics</h3>
+       <p data-template-id="service-two-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Healthcare for infants, children, and adolescents, including assessment of common childhood illnesses, growth, and general well-being.</p><a data-template-id="service-two-cta" class="canva-link service-link specialty-cta" data-specialty="General Pediatrics" href="#contact" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">Book Pediatric Visit</a>
+      </article>
+      <article class="service-card">
+       <span class="service-icon" aria-hidden="true">◇</span>
+       <h3 data-template-id="service-three-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Adult Gastroenterology</h3>
+       <p data-template-id="service-three-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Specialised evaluation and management of digestive-system and liver-related conditions, based on clinical assessment.</p><a data-template-id="service-three-cta" class="canva-link service-link specialty-cta" data-specialty="Adult Gastroenterology" href="#contact" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">Consult Gastroenterology</a>
+      </article>
+      <article class="service-card">
+       <span class="service-icon" aria-hidden="true">✳</span>
+       <h3 data-template-id="service-four-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Pediatric Gastroenterology</h3>
+       <p data-template-id="service-four-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Specialised assessment of digestive, nutritional, and related gastrointestinal concerns in infants, children, and adolescents.</p><a data-template-id="service-four-cta" class="canva-link service-link specialty-cta" data-specialty="Pediatric Gastroenterology" href="#contact" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">Book Pediatric Gastro Visit</a>
+      </article>
+      <article class="service-card">
+       <span class="service-icon" aria-hidden="true">▣</span>
+       <h3 data-template-id="service-five-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Advanced Endoscopy Unit</h3>
+       <p data-template-id="service-five-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">A dedicated, fully equipped endoscopy unit supporting clinically indicated gastrointestinal diagnostic and therapeutic procedures.</p><a data-template-id="service-five-cta" class="canva-link service-link specialty-cta" data-specialty="Endoscopy Enquiry" href="#contact" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">Enquire About Procedures</a>
+      </article>
+      <article class="service-card">
+       <span class="service-icon" aria-hidden="true">⚕</span>
+       <h3 data-template-id="service-six-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Diagnostic Laboratory &amp; Pharmacy</h3>
+       <p data-template-id="service-six-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Convenient access to diagnostic laboratory services and an in-house pharmacy within the clinic premises.</p><a data-template-id="service-six-cta" class="canva-link service-link specialty-cta" data-specialty="Laboratory / Pharmacy Enquiry" href="#contact" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">Enquire About Services</a>
+      </article>
+     </div>
+     <p data-template-id="services-note" class="canva-text services-note" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Additional medical specialties may be introduced in the future.</p>
+    </div>
+   </section>
+   <section id="doctors" class="section-pad">
+    <div class="shell">
+     <div class="section-heading"><span data-template-id="doctors-kicker" class="canva-text section-kicker" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">DOCTORS &amp; FACILITIES</span>
+      <h2 data-template-id="doctors-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 800; font-style: normal; font-size: 24px;">Expert Care, Supported by Modern Facilities</h2>
+      <p data-template-id="doctors-intro" class="canva-text lead" style="color: rgb(70, 90, 102); font-weight: 400; font-style: normal; font-size: 16px;">Our approach combines medical expertise, modern diagnostic support, and a welcoming environment to make healthcare more convenient for every patient.</p>
+     </div>
+     <h3 data-template-id="doctor-area-title" class="canva-text subsection-heading" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Our Doctor Profiles</h3>
+     <div class="doctor-grid">
+      <article class="doctor-card">
+       <span class="doctor-avatar" aria-hidden="true">✚</span>
+       <h3 data-template-id="doctor-one-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">General Medicine Specialist</h3>
+       <p data-template-id="doctor-one-placeholder" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Editable placeholders: doctor name, photograph, qualifications, experience, registration details, and availability. Details to be confirmed.</p><a class="secondary-btn" href="#contact">Book Appointment</a>
+      </article>
+      <article class="doctor-card">
+       <span class="doctor-avatar" aria-hidden="true">♡</span>
+       <h3 data-template-id="doctor-two-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">General Pediatrician</h3>
+       <p data-template-id="doctor-two-placeholder" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Editable placeholders: doctor name, photograph, qualifications, experience, registration details, and availability. Details to be confirmed.</p><a class="secondary-btn" href="#contact">Book Appointment</a>
+      </article>
+      <article class="doctor-card">
+       <span class="doctor-avatar" aria-hidden="true">◇</span>
+       <h3 data-template-id="doctor-three-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Adult Gastroenterologist</h3>
+       <p data-template-id="doctor-three-placeholder" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Editable placeholders: doctor name, photograph, qualifications, experience, registration details, and availability. Details to be confirmed.</p><a class="secondary-btn" href="#contact">Book Appointment</a>
+      </article>
+      <article class="doctor-card">
+       <span class="doctor-avatar" aria-hidden="true">✳</span>
+       <h3 data-template-id="doctor-four-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Pediatric Gastroenterologist</h3>
+       <p data-template-id="doctor-four-placeholder" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Editable placeholders: doctor name, photograph, qualifications, experience, registration details, and availability. Details to be confirmed.</p><a class="secondary-btn" href="#contact">Book Appointment</a>
+      </article>
+     </div>
+     <h3 data-template-id="facility-area-title" class="canva-text subsection-heading" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Facilities Designed Around Your Care</h3>
+     <div class="facility-grid">
+      <article class="facility-card">
+       <div class="image-frame">
+        <img data-template-id="facility-endoscopy-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/5827294/pexels-photo-5827294.jpeg" alt="Clean medical room with instruments and supplies near a patient bed"><span class="image-fallback" aria-hidden="true">Clean endoscopy environment and equipment</span>
+       </div>
+       <div class="facility-body">
+        <h3 data-template-id="facility-one-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Advanced Endoscopy Unit</h3>
+        <p data-template-id="facility-one-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">A modern, clean endoscopy environment with medical equipment.</p>
+       </div>
+      </article>
+      <article class="facility-card">
+       <div class="image-frame">
+        <img data-template-id="facility-lab-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/8442514/pexels-photo-8442514.jpeg" alt="Scientist analysing samples in a modern laboratory"><span class="image-fallback" aria-hidden="true">Organised diagnostic laboratory</span>
+       </div>
+       <div class="facility-body">
+        <h3 data-template-id="facility-two-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Diagnostic Laboratory</h3>
+        <p data-template-id="facility-two-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Organised contemporary laboratory equipment and a hygienic workspace.</p>
+       </div>
+      </article>
+      <article class="facility-card">
+       <div class="image-frame">
+        <img data-template-id="facility-pharmacy-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/14797857/pexels-photo-14797857.jpeg" alt="Pharmacist at a pharmacy counter with organised medicine shelves"><span class="image-fallback" aria-hidden="true">Organised pharmacy counter</span>
+       </div>
+       <div class="facility-body">
+        <h3 data-template-id="facility-three-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">In-House Pharmacy</h3>
+        <p data-template-id="facility-three-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">A well-organised pharmacy counter and medicine storage.</p>
+       </div>
+      </article>
+      <article class="facility-card">
+       <div class="image-frame">
+        <img data-template-id="facility-room-image" class="canva-image" loading="lazy" src="https://images.pexels.com/photos/7789616/pexels-photo-7789616.jpeg" alt="Bright medical consultation room with desk, chairs, and examination bed"><span class="image-fallback" aria-hidden="true">Bright, comfortable consultation room</span>
+       </div>
+       <div class="facility-body">
+        <h3 data-template-id="facility-four-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Patient-Friendly Consultation Rooms</h3>
+        <p data-template-id="facility-four-body" class="canva-text" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Bright, comfortable rooms suitable for adults, children, and families.</p>
+       </div>
+      </article>
+     </div>
+     <div data-template-id="facility-highlight" class="canva-banner highlight-strip" style="background: rgb(22, 59, 92); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Consultation • Diagnostics • Endoscopy • Pharmacy — Conveniently Located Under One Roof</div>
+    </div>
+   </section>
+   <section id="contact" data-template-id="contact-section" class="canva-section section-pad contact-section" style="background: rgb(241, 250, 250);">
+    <div class="shell">
+     <div class="section-heading"><span data-template-id="contact-kicker" class="canva-text section-kicker" style="color: rgb(8, 127, 140); font-weight: 400; font-style: normal; font-size: 16px;">CONTACT / BOOK APPOINTMENT</span>
+      <h2 data-template-id="contact-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 800; font-style: normal; font-size: 24px;">Your Health Matters. Let’s Get You Started.</h2>
+      <p data-template-id="contact-intro" class="canva-text lead" style="color: rgb(70, 90, 102); font-weight: 400; font-style: normal; font-size: 16px;">Schedule a consultation with our team or contact us for information about our medical specialties and facilities.</p>
+     </div>
+     <div class="contact-grid">
+      <div>
+       <div class="contact-stack">
+        <div data-template-id="contact-address" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Clinic Address: [Insert Complete Clinic Address]</div>
+        <div data-template-id="contact-phone" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Phone: [Insert Contact Number]</div>
+        <div data-template-id="contact-whatsapp" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">WhatsApp: [Insert WhatsApp Number]</div>
+        <div data-template-id="contact-email" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Email: [Insert Official Email Address]</div>
+        <div data-template-id="contact-hours" class="canva-card contact-card" style="background: rgb(255, 255, 255); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Operating Hours: [Insert Confirmed Timings]</div>
+       </div>
+       <p data-template-id="contact-placeholder-note" class="canva-text placeholder-note" style="color: rgb(82, 102, 114); font-weight: 400; font-style: normal; font-size: 16px;">Contact links will be enabled after verified clinic details are supplied.</p>
+       <div data-template-id="map-placeholder" class="canva-panel map-box" style="background: rgb(232, 245, 243); color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Map link or embedded Google Map will appear after the clinic location is confirmed.</div>
+      </div>
+      <div>
+       <div class="form-panel">
+        <h3 data-template-id="form-title" class="canva-text" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 19px;">Appointment request form</h3>
+        <p data-template-id="form-availability" class="canva-text placeholder-note" style="color: rgb(82, 102, 114); font-weight: 400; font-style: normal; font-size: 16px;">Form submission is not available until a secure appointment integration is connected.</p>
+        <form id="appointment-form" novalidate="">
+         <div class="form-grid">
+          <div class="field">
+           <label data-template-id="label-name" class="canva-text" for="patient-name" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Patient Name *</label><input id="patient-name" name="patient_name" autocomplete="name" required="" aria-describedby="error-name">
+           <p class="field-error" id="error-name" aria-live="polite"></p>
+          </div>
+          <div class="field">
+           <label data-template-id="label-mobile" class="canva-text" for="mobile-number" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Mobile Number *</label><input id="mobile-number" name="mobile_number" type="tel" inputmode="tel" autocomplete="tel" required="" aria-describedby="error-mobile">
+           <p class="field-error" id="error-mobile" aria-live="polite"></p>
+          </div>
+          <div class="field">
+           <label data-template-id="label-category" class="canva-text" for="patient-category" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Patient Category *</label><select id="patient-category" name="patient_category" required="" aria-describedby="error-category"><option value="">Select category</option><option>Adult</option><option>Child</option></select>
+           <p class="field-error" id="error-category" aria-live="polite"></p>
+          </div>
+          <div class="field">
+           <label data-template-id="label-specialty" class="canva-text" for="required-specialty" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Required Specialty *</label><select id="required-specialty" name="required_specialty" required="" aria-describedby="error-specialty"><option value="">Select specialty</option><option>General Medicine</option><option>General Pediatrics</option><option>Adult Gastroenterology</option><option>Pediatric Gastroenterology</option><option>Endoscopy Enquiry</option><option>Laboratory / Pharmacy Enquiry</option><option>Other</option></select>
+           <p class="field-error" id="error-specialty" aria-live="polite"></p>
+          </div>
+          <div class="field">
+           <label data-template-id="label-date" class="canva-text" for="preferred-date" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Preferred Appointment Date *</label><input id="preferred-date" name="preferred_date" type="date" required="" aria-describedby="error-date">
+           <p class="field-error" id="error-date" aria-live="polite"></p>
+          </div>
+          <div class="field">
+           <label data-template-id="label-time" class="canva-text" for="preferred-time" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Preferred Time Slot *</label><select id="preferred-time" name="preferred_time" required="" aria-describedby="error-time"><option value="">Select time slot</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select>
+           <p class="field-error" id="error-time" aria-live="polite"></p>
+          </div>
+          <div class="field wide">
+           <label data-template-id="label-message" class="canva-text" for="optional-message" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">Optional Message</label><textarea id="optional-message" name="optional_message" aria-describedby="message-guidance"></textarea>
+           <p id="message-guidance" class="placeholder-note">Please do not include sensitive medical information.</p>
+          </div>
+         </div>
+         <div class="consent-wrap">
+          <input id="consent" name="consent" type="checkbox" required="" aria-describedby="error-consent"><label data-template-id="label-consent" class="canva-text consent-label" for="consent" style="color: rgb(22, 59, 92); font-weight: 400; font-style: normal; font-size: 16px;">I agree to be contacted by the clinic regarding my appointment request.</label>
+         </div>
+         <p class="field-error" id="error-consent" aria-live="polite"></p>
+         <p data-template-id="form-note" class="canva-text form-note" style="color: rgb(83, 100, 113); font-weight: 400; font-style: normal; font-size: 16px;">Submitting this form sends an appointment request. Your appointment is confirmed only after the clinic contacts you.</p><button data-template-id="form-submit" class="canva-button primary-btn" type="submit" style="background: rgb(8, 127, 140); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Request an Appointment</button>
+         <div id="form-status" class="form-status" role="status" aria-live="polite" hidden=""></div>
+        </form>
+       </div>
+       <div data-template-id="configuration-note" class="canva-panel configuration-note" style="background: rgb(255, 255, 255); color: rgb(67, 86, 99); font-weight: 400; font-style: normal; font-size: 16px;">Configuration required: Connect an authorised secure backend, database, or booking service before enabling form submissions. Protect patient contact details and do not collect unnecessary sensitive medical information.</div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer data-template-id="site-footer" class="canva-footer site-footer" style="background: rgb(22, 59, 92);">
+   <div class="shell">
+    <div class="footer-grid">
+     <div><a class="brand" href="#home" aria-label="Gastropedia Speciality Clinics — Home"><span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M18 4v12M12 10h12"></path><path d="M18 19c-1 2-5 1-6 5-1 4 2 7 6 7 5 0 8-3 8-8 0-4-3-6-5-7v5c0 2-2 3-3 2"></path>
+        </svg></span><span><span class="brand-name">GASTROPEDIA</span><span class="brand-small">SPECIALITY CLINICS</span></span></a>
+      <p data-template-id="footer-description" class="canva-text" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">Compassionate healthcare for adults and children, with gastroenterology expertise and convenient care under one roof.</p>
+     </div>
+     <nav aria-label="Footer navigation">
+      <h3 data-template-id="footer-nav-title" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 19px;">Quick links</h3><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Specialities &amp; Services</a><a href="#doctors">Doctors &amp; Facilities</a><a href="#contact">Contact / Book Appointment</a>
+     </nav>
+     <nav aria-label="Specialty links">
+      <h3 data-template-id="footer-specialty-title" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 19px;">Specialities</h3><a href="#services">General Medicine</a><a href="#services">General Pediatrics</a><a href="#services">Adult Gastroenterology</a><a href="#services">Pediatric Gastroenterology</a>
+     </nav>
+     <div>
+      <h3 data-template-id="footer-contact-title" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 19px;">Contact</h3><span data-template-id="footer-address" class="canva-text footer-placeholder" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">[Insert Complete Clinic Address]</span><span data-template-id="footer-phone" class="canva-text footer-placeholder" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">[Insert Contact Number]</span><span data-template-id="footer-email" class="canva-text footer-placeholder" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">[Insert Official Email Address]</span><span data-template-id="footer-social" class="canva-text footer-placeholder inactive" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">Social media: official accounts pending</span>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p data-template-id="footer-disclaimer" class="canva-text" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">Website information is provided for general educational purposes and does not replace professional medical advice, diagnosis, or treatment. Please consult a qualified healthcare professional for individual medical concerns. In a medical emergency, seek immediate emergency medical care.</p>
+     <div class="legal-links" aria-label="Legal information pending publication">
+      <span data-template-id="legal-privacy" class="canva-text" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">Privacy Policy — pending</span><span data-template-id="legal-terms" class="canva-text" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">Terms of Use — pending</span><span data-template-id="legal-medical" class="canva-text" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">Medical Disclaimer — shown above</span>
+     </div>
+     <div class="footer-meta">
+      <span data-template-id="copyright" class="canva-text" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Gastropedia Speciality Clinics. All rights reserved.</span><a data-template-id="back-top" class="canva-link back-top" href="#home" style="color: rgb(220, 235, 240); font-weight: 400; font-style: normal; font-size: 16px;">↑ Back to Top</a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+    (() => {
+      const toggle = document.getElementById('menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      function setMenu(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+        toggle.querySelector('span').textContent = open ? '×' : '☰';
+        mobileNav.hidden = !open;
+        mobileNav.classList.toggle('is-open', open);
+      }
+      toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+      mobileNav.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          toggle.focus();
+        }
+      });
+
+      const specialty = document.getElementById('required-specialty');
+      document.querySelectorAll('.specialty-cta').forEach(link => {
+        link.addEventListener('click', () => { specialty.value = link.dataset.specialty; });
+      });
+
+      document.querySelectorAll('.image-frame img').forEach(image => {
+        image.addEventListener('error', () => image.parentElement.classList.add('image-error'));
+        image.addEventListener('load', () => image.parentElement.classList.remove('image-error'));
+      });
+
+      const form = document.getElementById('appointment-form');
+      const status = document.getElementById('form-status');
+      const fields = [
+        ['patient-name', 'error-name', 'Enter the patient name.'],
+        ['mobile-number', 'error-mobile', 'Enter a valid mobile number.'],
+        ['patient-category', 'error-category', 'Select a patient category.'],
+        ['required-specialty', 'error-specialty', 'Select a specialty.'],
+        ['preferred-date', 'error-date', 'Choose a preferred date.'],
+        ['preferred-time', 'error-time', 'Select a preferred time slot.'],
+        ['consent', 'error-consent', 'Consent is required.']
+      ];
+      const dateInput = document.getElementById('preferred-date');
+      const now = new Date();
+      dateInput.min = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+      function validateField(id, errorId, message) {
+        const input = document.getElementById(id);
+        let valid = input.type === 'checkbox' ? input.checked : Boolean(input.value.trim());
+        if (id === 'mobile-number') {
+          const digits = input.value.replace(/\D/g, '');
+          valid = /^[+()\d\s-]+$/.test(input.value.trim()) && digits.length >= 7 && digits.length <= 15;
+        }
+        if (id === 'preferred-date' && valid) valid = input.value >= dateInput.min;
+        document.getElementById(errorId).textContent = valid ? '' : (id === 'preferred-date' && input.value ? 'Choose today or a future date.' : message);
+        input.setAttribute('aria-invalid', String(!valid));
+        return valid;
+      }
+      fields.forEach(([id, errorId, message]) => {
+        const input = document.getElementById(id);
+        input.addEventListener(input.tagName === 'SELECT' || input.type === 'checkbox' || input.type === 'date' ? 'change' : 'input', () => {
+          if (input.getAttribute('aria-invalid') === 'true') validateField(id, errorId, message);
+        });
+      });
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const results = fields.map(([id, errorId, message]) => validateField(id, errorId, message));
+        if (results.includes(false)) {
+          status.hidden = false;
+          status.textContent = 'Please correct the highlighted fields. This form cannot send an appointment request yet.';
+          document.getElementById(fields[results.indexOf(false)][0]).focus();
+          return;
+        }
+        status.hidden = false;
+        status.textContent = 'Appointment integration is not configured yet. Please contact the clinic by phone or email to submit your request.';
+      });
+    })();
+  </script>
+ 
+</body></html>
